@@ -1,0 +1,237 @@
+:root {
+    --dark-blue: #222222;
+    --light-pink: #F1E4E6;
+    --dark-pink: #F16D7F;
+    --pink: #F26376;
+    --brown: rgba(33, 22, 22, 0.7);
+    --grey: #9F9F9F;
+    --light-grey: #F8F8F8;
+    --dark: #000000;
+    --dark-grey: #5D5D5D;
+
+}
+
+body {
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.container {
+    width: 1138px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+
+.header {
+    background-color: var(--dark-blue);
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+    margin: 0 34px 0 0;
+}
+
+.header__person-link {
+    margin: 0 34px 0 0;
+}
+
+.header__navigation {
+    display: none;
+}
+
+.brand {
+    display: flex;
+    background-color: var(--light-pink);
+    margin: 0 0 65px 0;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__title-wrapper {
+    padding: 0 0 0 91px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__subtitle {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.brand__subtitle-pink {
+    color: var(--dark-pink);
+}
+
+.offers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offers__item {
+    color: white;
+    width: 360px;
+    min-height: 260px;
+    background: var(--brown);
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers__item--woman {
+    background-image: url(../img/for_women.jpg);
+}
+
+.offers__item--man {
+    background-image: url(../img/for_men.jpg);
+}
+
+.offers__item--kids {
+    background-image: url(../img/for_kids.jpg);
+}
+
+.offers__item--accesories {
+    background-image: url(../img/accesories.jpg);
+    width: 100%;
+    margin: 0;
+}
+
+.offers__item-text {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.offers__item-what {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.products {
+    padding: 96px 0 96px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products__title {
+    color: var(--dark-blue);
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.products__title-subtitle {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.products__list {
+    padding: 48px 0 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products__item {
+    width: 360px;
+    background-color: var(--light-grey);
+    margin: 0 0 30px;   
+}
+
+.products__item-discription {
+    min-height: 162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px auto 20px 16px;
+    
+}
+
+.button__hidden {
+    display: none;
+}
+
+.products__item-text {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--dark);
+}
+
+.product__discription {
+    color: var(--dark-grey);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.text__cost {
+    color: var(--dark-pink);
+}
+
+.button__all-products {
+    border: 1px solid #FF6A6A;
+    width: 210px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.main__bottom {
+    min-height: 341px;
+    background: #222224;
+    color: #FBFBFB;
+    display: flex;
+    align-items: center;
+}
+
+.main__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom__discription {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
