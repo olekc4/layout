@@ -5,11 +5,13 @@
   --pink: #f26376;
   --brown: rgba(33, 22, 22, 0.7);
   --grey: #9f9f9f;
+  --grey2: #b1b1b1;
   --light-grey: #e1e1e1;
   --light-white: #f8f8f8;
   --dark: #000000;
   --dark-grey: #5d5d5d;
   --white: #fbfbfb;
+  --white2: #ffffff;
 }
 
 body {
@@ -266,7 +268,20 @@ a {
   width: 360px;
   background-color: var(--light-white);
   margin: 0 0 30px;
+}
+
+.cart-wrapper-overlay {
   position: relative;
+}
+
+.cart-wrapper-overlay:before {
+  display: none;
+  content: "";
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
 }
 
 .button__hidden {
@@ -274,10 +289,21 @@ a {
   position: absolute;
   width: 138px;
   height: 43px;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background: none;
+  color: var(--white2);
+}
+
+.products__item:hover .cart-wrapper-overlay:before {
+  display: block;
+}
+
+.products__item:hover .button__hidden {
+  display: block;
+  border: 1px solid var(--white2);
 }
 
 .products__item-info {
@@ -318,6 +344,11 @@ a {
   align-items: center;
   color: var(--pink);
   text-decoration: none;
+}
+
+.button__all-products:hover {
+  background-color: var(--dark-pink);
+  color: var(--white2);
 }
 
 .main__bottom {
@@ -429,6 +460,12 @@ a {
   width: 256px;
 }
 
+[type="email"]:focus,
+[type="name"]:focus,
+[type="password"]:focus {
+  outline: none;
+}
+
 .subscrime__button {
   background-color: var(--dark-pink);
   color: var(--white);
@@ -475,12 +512,155 @@ a {
 
 .registration__form {
   display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 96px;
 }
 
 .form {
   width: 360px;
 }
 
+.registration__form-legend {
+  font-weight: 300;
+}
+
+.registration__form-space {
+  margin-top: 20px;
+}
+
+.form__input-area {
+  width: 360px;
+  height: 45px;
+  padding-left: 17px;
+}
+
+.form__input-area::-webkit-input-placeholder {
+  color: var(--grey2);
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.form__input-area::-moz-placeholder {
+  color: var(--grey2);
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.form__input-area:-moz-placeholder {
+  color: var(--grey2);
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.form__input-area:-ms-input-placeholder {
+  color: var(--grey2);
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.registration__form-radio {
+  display: flex;
+  margin-top: 31px;
+  margin-bottom: 33px;
+  padding-left: 27px;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+}
+
+[type="radio"] {
+  display: none;
+}
+
+.radio-label {
+  position: relative;
+  margin-right: 47px;
+}
+
+.radio-label:before {
+  content: " ";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  border: 1px solid #a4a4a4;
+  left: -27px;
+  top: -3px;
+  border-radius: 9px;
+}
+
+[type="radio"]:checked + .radio-label:before {
+  background-color: var(--dark-pink);
+  border: 1px solid var(--dark-pink);
+}
+
+.registration__form-details {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--grey2);
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.registration__button {
+  width: 167px;
+  height: 50px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: var(--white2);
+  background-color: var(--dark-pink);
+  border: none;
+  text-align: left;
+  padding-left: 29px;
+  position: relative;
+}
+
+.registration__button:after {
+  content: url("../img/narrow.svg");
+  position: absolute;
+  width: 17px;
+  height: 10px;
+  left: 121px;
+}
+
 .registration__info {
   width: 652px;
+}
+
+.registration__info-title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.registration__info-text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+.registration__mark {
+  position: relative;
+  margin-left: 43px;
+  margin-top: 21px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+.registration__mark:before {
+  content: url("../img/mark.svg");
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  left: -43px;
 }

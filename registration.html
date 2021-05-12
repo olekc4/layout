@@ -101,12 +101,22 @@
         <div class="registration__form">
           <form action="endpoint" class="form">
             <fieldset>
-              <legend>Your Name</legend>
-              <div>
-                <input type="name" placeholder="First Name" />
+              <legend class="registration__form-legend">Your Name</legend>
+              <div class="registration__form-space">
+                <input
+                  class="form__input-area"
+                  type="name"
+                  placeholder="First Name"
+                />
               </div>
-              <input type="name" placeholder="Last Name" />
-              <div>
+              <div class="registration__form-space">
+                <input
+                  class="form__input-area"
+                  type="name"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="registration__form-radio">
                 <input
                   class="radio-input"
                   type="radio"
@@ -135,32 +145,45 @@
               </div>
             </fieldset>
             <fieldset>
-              <legend>Login details</legend>
-              <div>
-                <input type="email" placeholder="Email" />
+              <legend class="registration__form-legend">Login details</legend>
+              <div class="registration__form-space">
+                <input
+                  class="form__input-area"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
               </div>
-              <div>
-                <input type="password" placeholder="Password" />
+              <div class="registration__form-space">
+                <input
+                  class="form__input-area"
+                  type="password"
+                  placeholder="Password"
+                />
               </div>
-              <p>
+              <p class="registration__form-details">
                 Please use 8 or more characters, with at least 1 number and a
                 mixture of uppercase and lowercase letters
               </p>
             </fieldset>
-            <button type="submit">join now</button>
+            <button type="submit" class="registration__button">join now</button>
           </form>
           <div class="registration__info">
-            <h2>loyalty has its perks</h2>
-            <p>
+            <h2 class="registration__info-title">loyalty has its perks</h2>
+            <p class="registration__info-text">
               Get in on the loyalty program where you can earn points and unlock
               serious perks. Starting with these as soon as you join:
             </p>
             <ul>
-              <li>15% off welcome offer</li>
-              <li>Free shipping, returns and exchanges on all orders</li>
-              <li>$10 off a purchase on your birthday</li>
-              <li>Early access to products</li>
-              <li>Exclusive offers & rewards</li>
+              <li class="registration__mark">15% off welcome offer</li>
+              <li class="registration__mark">
+                Free shipping, returns and exchanges on all orders
+              </li>
+              <li class="registration__mark">
+                $10 off a purchase on your birthday
+              </li>
+              <li class="registration__mark">Early access to products</li>
+              <li class="registration__mark">Exclusive offers & rewards</li>
             </ul>
           </div>
         </div>
