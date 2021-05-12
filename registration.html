@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__contorls">
+            <a href="./index.html"
+              ><img
+                class="header__logo"
+                src="./img/logo.svg"
+                alt="logo"
+                width="44"
+                height="38"
+            /></a>
+            <img src="./img/loupe.svg" alt="loupe" width="26" height="27" />
+          </div>
+          <div class="header__contorls header__contorls-navigaion">
+            <button class="header__button">
+              <img src="./img/burger.svg" alt="burger" width="32" height="23" />
+            </button>
+            <nav class="header__navigation">
+              <h2 class="header__menu-title">menu</h2>
+              <ul>
+                <li>
+                  <a href="#" class="header__menu-choice">man</a>
+                  <ul>
+                    <li class="header__menu-list">
+                      <a href="#">Accessories</a>
+                    </li>
+                    <li class="header__menu-list"><a href="#">Bags</a></li>
+                    <li class="header__menu-list"><a href="#">Denim</a></li>
+                    <li class="header__menu-list"><a href="#">T-Shirts</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="header__menu-choice">woman</a>
+                  <ul>
+                    <li class="header__menu-list">
+                      <a href="#">Accessories</a>
+                    </li>
+                    <li class="header__menu-list">
+                      <a href="#">Jackets & Coats</a>
+                    </li>
+                    <li class="header__menu-list"><a href="#">Polos</a></li>
+                    <li class="header__menu-list"><a href="#">T-Shirts</a></li>
+                    <li class="header__menu-list"><a href="#">Shirts</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="header__menu-choice">kids</a>
+                  <ul>
+                    <li class="header__menu-list">
+                      <a href="#">Accessories</a>
+                    </li>
+                    <li class="header__menu-list">
+                      <a href="#">Jackets & Coats</a>
+                    </li>
+                    <li class="header__menu-list"><a href="#">Polos</a></li>
+                    <li class="header__menu-list"><a href="#">T-Shirts</a></li>
+                    <li class="header__menu-list"><a href="#">Shirts</a></li>
+                    <li class="header__menu-list"><a href="#">Bags</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__person-link" href="#"
+              ><img
+                src="./img/personal.svg"
+                alt="registration"
+                width="29"
+                height="29"
+            /></a>
+            <a href="#" class="cart"
+              ><img src="./img/cart.svg" alt="cart" width="32" height="29"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="registration__item">
+      <div class="container">
+        <h2 class="registration__title">registration</h2>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="registration__form">
+          <form action="endpoint" class="form">
+            <fieldset>
+              <legend>Your Name</legend>
+              <div>
+                <input type="name" placeholder="First Name" />
+              </div>
+              <input type="name" placeholder="Last Name" />
+              <div>
+                <input
+                  class="radio-input"
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="male"
+                />
+                <label class="radio-label" for="male">Male</label>
+
+                <input
+                  class="radio-input"
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  value="female"
+                />
+                <label class="radio-label" for="female">Female</label>
+                <input
+                  class="radio-input"
+                  type="radio"
+                  id="other"
+                  name="gender"
+                  value="other"
+                />
+                <label class="radio-label" for="other">Other</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Login details</legend>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="password" placeholder="Password" />
+              </div>
+              <p>
+                Please use 8 or more characters, with at least 1 number and a
+                mixture of uppercase and lowercase letters
+              </p>
+            </fieldset>
+            <button type="submit">join now</button>
+          </form>
+          <div class="registration__info">
+            <h2>loyalty has its perks</h2>
+            <p>
+              Get in on the loyalty program where you can earn points and unlock
+              serious perks. Starting with these as soon as you join:
+            </p>
+            <ul>
+              <li>15% off welcome offer</li>
+              <li>Free shipping, returns and exchanges on all orders</li>
+              <li>$10 off a purchase on your birthday</li>
+              <li>Early access to products</li>
+              <li>Exclusive offers & rewards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="subscrime">
+        <div class="container">
+          <div class="subscrime__wrapper">
+            <div class="subscrime__wrapper-owner">
+              <img
+                class="owner__photo"
+                src="./img/girl.png"
+                alt="girl"
+                width="96"
+                height="96"
+              />
+              <p class="owner__quote-text">
+                “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                <span class="owner__quote-italic"
+                  >a pulvinar purus condimentum“</span
+                >
+              </p>
+            </div>
+            <div class="subscrime__form">
+              <h2 class="subscrime__form-title">
+                subscribe
+                <span class="subscrime__form-subtitle"
+                  >for our newsletter and promotion</span
+                >
+              </h2>
+              <form action="endpoint" class="subscrime__form-block">
+                <input
+                  type="email"
+                  placeholder="Enter Your Email"
+                  required
+                  class="subscrime__input"
+                />
+                <button type="submit" class="subscrime__button">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-info">
+            <p class="rights">&copy; 2021 Brand All rights reserved.</p>
+            <div class="social_nets">
+              <a href="#"
+                ><img
+                  src="./img/facebook.svg"
+                  alt="facebook"
+                  width="32"
+                  height="32"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./img/instagram.svg"
+                  alt="instagram"
+                  width="32"
+                  height="32"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./img/pinterest.svg"
+                  alt="pinterest"
+                  width="32"
+                  height="32"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./img/twitter.svg"
+                  alt="twitter"
+                  width="32"
+                  height="32"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
