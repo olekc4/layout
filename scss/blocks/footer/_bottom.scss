@@ -1,0 +1,13 @@
+.footer__bottom {
+  background-color: $dark-blue;
+  .footer__bottom-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 79px;
+  }
+}
+
+.rights {
+  color: $white;
+}

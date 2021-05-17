@@ -1,0 +1,46 @@
+body {
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.container {
+  width: 1138px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #6f6e6e;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+[type="email"]:focus,
+[type="name"]:focus,
+[type="password"]:focus {
+  outline: none;
+}
+
+@media (max-width: $max-tablet-width) {
+   .container {
+     width: 736px;
+   }
+}
+
+@media (max-width: $max-mobile-width) {
+  .container {
+    width: 375px;
+  }
+}
