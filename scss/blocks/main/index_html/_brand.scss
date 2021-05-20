@@ -15,6 +15,7 @@
   line-height: 58px;
   text-transform: uppercase;
   position: relative;
+  font-style: normal;
 }
 
 .brand__title:before {
@@ -51,23 +52,58 @@
       max-width: 768px;
     }
 
-  .image_brand {
-    width: 386px;
-    height: 368px;
+    &__image {
+      width: 386px;
+      height: 368px;
+    }
+
+    &__title {
+      font-size: 44px;
+      line-height: 53px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
   }
+  .products {
+    padding: 155px 0 65px 0;
+
+    &__list {
+      padding: 73px 0 33px 0;
+    }
   }
 }
 
 @media (max-width: $max-mobile-width) {
   .brand {
-    .image_brand {
+    margin: 0 0 64px 0;
+
+    &__image {
       display: none;
     }
 
     &__wrapper {
       height: 363px;
-      max-width: 375px;
+    }
+
+    &__title-wrapper {
+      padding: 0 0 0 83px;
+    }
+
+    &__title {
+      font-size: 38px;
+      line-height: 46px;
+    }
+
+    &__title:before {
+      height: 61px;
+      left: -27px;
+      top: 5px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
     }
   }
-
 }

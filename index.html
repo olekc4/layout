@@ -93,7 +93,7 @@
     <main>
       <section class="brand">
         <div class="brand__wrapper">
-          <img src="./img/man.png" alt="man" class="image_brand" width="800" height="765" />
+          <img src="./img/man.png" alt="man" class="brand__image" width="800" height="765" />
           <div class="brand__title-wrapper">
             <h1 class="brand__title">
               the brand
@@ -108,25 +108,25 @@
       <section class="offers container">
         <h2 class="visually-hidden">Offers</h2>
         <ul class="offers__list offers__item-text">
-          <li class="offers__item offers__item--woman">
+          <li class="offers__item offers__item-woman">
             <div>
               <p>30% off</p>
               <h3 class="offers__item-what brand__subtitle-pink">for women</h3>
             </div>
           </li>
-          <li class="offers__item offers__item--man">
+          <li class="offers__item offers__item-man">
             <div>
               <p>hot deal</p>
               <h3 class="offers__item-what brand__subtitle-pink">for men</h3>
             </div>
           </li>
-          <li class="offers__item offers__item--kids">
+          <li class="offers__item offers__item-kids">
             <div>
               <p>new arrivals</p>
               <h3 class="offers__item-what brand__subtitle-pink">for kids</h3>
             </div>
           </li>
-          <li class="offers__item offers__item--accesories">
+          <li class="offers__item offers__item-accesories">
             <div>
               <p>luxirous & trendy</p>
               <h3 class="offers__item-what brand__subtitle-pink">accesories</h3>
@@ -277,14 +277,14 @@
         </ul>
         <a href="#" class="button__all-products">Browse All Products</a>
       </section>
-      <section class="main__bottom">
-        <ul class="container main__bottom-wrapper">
+      <section class="bottom">
+        <ul class="container bottom__wrapper">
           <li class="bottom__discription">
             <img
               src="./img/Delivery.svg"
               alt="delivery"
               width="45"
-              height="32"
+              height="32" class="bottom__discription-img"
             />
             <h3 class="bottom__discription-item">Free Delivery</h3>
             <p class="bottom__discription-item-text">
@@ -297,7 +297,7 @@
               src="./img/discount.svg"
               alt="discount"
               width="40"
-              height="40"
+              height="40" class="bottom__discription-img"
             />
             <h3 class="bottom__discription-item">Sales & discounts</h3>
             <p class="bottom__discription-item-text">
@@ -306,7 +306,7 @@
             </p>
           </li>
           <li class="bottom__discription">
-            <img src="./img/crown.svg" alt="quality" width="47" height="35" />
+            <img src="./img/crown.svg" alt="quality" width="47" height="35" class="bottom__discription-img"/>
             <h3 class="bottom__discription-item">Quality assurance</h3>
             <p class="bottom__discription-item-text">
               Worldwide delivery on all. Authorit tively morph next-generation
@@ -316,47 +316,47 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <section class="subscrime">
-        <div class="container">
-          <div class="subscrime__wrapper">
-            <div class="subscrime__wrapper-owner">
-              <img
-                class="owner__photo"
-                src="./img/girl.png"
-                alt="girl"
-                width="96"
-                height="96"
+    <section class="subscrime">
+      <div class="container">
+        <div class="subscrime__wrapper">
+          <div class="subscrime__wrapper-owner">
+            <img
+              class="owner__photo"
+              src="./img/girl.png"
+              alt="girl"
+              width="96"
+              height="96"
+            />
+            <p class="owner__quote-text">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+              <span class="owner__quote-italic"
+                >a pulvinar purus condimentum“</span
+              >
+            </p>
+          </div>
+          <div class="subscrime__wrapper-form">
+            <h2 class="subscrime__form-title">
+              subscribe
+              <span class="subscrime__form-subtitle"
+                >for our newsletter and promotion</span
+              >
+            </h2>
+            <form action="endpoint" class="subscrime__form-block">
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                required
+                class="subscrime__input"
               />
-              <p class="owner__quote-text">
-                “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                <span class="owner__quote-italic"
-                  >a pulvinar purus condimentum“</span
-                >
-              </p>
-            </div>
-            <div class="subscrime__form">
-              <h2 class="subscrime__form-title">
-                subscribe
-                <span class="subscrime__form-subtitle"
-                  >for our newsletter and promotion</span
-                >
-              </h2>
-              <form action="endpoint" class="subscrime__form-block">
-                <input
-                  type="email"
-                  placeholder="Enter Your Email"
-                  required
-                  class="subscrime__input"
-                />
-                <button type="submit" class="subscrime__button">
-                  Subscribe
-                </button>
-              </form>
-            </div>
+              <button type="submit" class="subscrime__button">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <footer>
       <section class="footer__bottom">
         <div class="container">
           <div class="footer__bottom-info">

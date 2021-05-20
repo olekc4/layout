@@ -21,7 +21,7 @@
   margin-bottom: 96px;
 }
 
-.form {
+.registration__form-wrapper {
   width: 360px;
 }
 
@@ -65,41 +65,6 @@
   font-family: Lato;
   font-size: 13px;
   font-weight: 300;
-}
-
-.registration__form-radio {
-  display: flex;
-  margin-top: 31px;
-  margin-bottom: 33px;
-  padding-left: 27px;
-  font-size: 11px;
-  font-weight: 300;
-  line-height: 13px;
-}
-
-[type="radio"] {
-  display: none;
-}
-
-.radio-label {
-  position: relative;
-  margin-right: 47px;
-}
-
-.radio-label:before {
-  content: " ";
-  width: 17px;
-  height: 17px;
-  position: absolute;
-  border: 1px solid #a4a4a4;
-  left: -27px;
-  top: -3px;
-  border-radius: 9px;
-}
-
-[type="radio"]:checked + .radio-label:before {
-  background-color: $dark-pink;
-  border: 1px solid $dark-pink;
 }
 
 .registration__form-details {

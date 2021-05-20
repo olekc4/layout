@@ -1,4 +1,4 @@
-.main__bottom {
+.bottom {
   min-height: 341px;
   background: $dark-blue;
   color: $white;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.main__bottom-wrapper {
+.bottom__wrapper {
   display: flex;
   justify-content: space-between;
   min-height: 134px;
@@ -34,10 +34,28 @@
 }
 
 @media (max-width: $max-tablet-width) {
-  .main__bottom-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .bottom {
+    min-height: 610px;
+    display: block;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+
+    &__discription {
+      margin-top: 48px;      
+    }
+
+    &__discription-img {
+      margin-bottom: 28px;
+    }
+
+    &__discription-item {
+      margin-bottom: 16px;
+    }
   }
 
 }

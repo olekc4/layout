@@ -1,7 +1,6 @@
 .subscrime {
   background-image: url(../img/nature.jpg);
   max-width: 1600px;
-  min-height: 448px;
   margin: auto;
 
 
@@ -19,7 +18,7 @@
     align-items: center;
   }
 
-  .subscrime__form {
+  .subscrime__wrapper-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,8 +31,8 @@
     line-height: 40px;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 0 32px;
     width: 557px;
+    margin-bottom: 27px;
   }
 
   .subscrime__form-subtitle {
@@ -86,5 +85,24 @@
 
 @media (max-width: $max-tablet-width) {
   .subscrime {
-    max-width: 768px;
+    background-image: url(../img/photo_subscribe_tablet.jpg);
+    width: 768px;
+    height: 614px;
+
+    &__wrapper {
+      flex-direction: column;
+
+      .subscrime__wrapper-form {
+        padding: 0;
+      }
+    }
+
+    &__wrapper-owner {
+      margin-top: 64px;
+      margin-bottom: 48px;
+    }
+    
+    &__form-block {
+    }
+  }
 }
