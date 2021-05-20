@@ -1,0 +1,16 @@
+.cart__item {
+  min-height: 148px;
+  background: #f8f3f4;
+  color: $white;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  .cart__item-title {
+  color: $dark-pink;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+}

@@ -1,0 +1,120 @@
+.header {
+  background-color: $dark-blue;
+  
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+  }
+  
+  &__logo {
+    margin: 0 41px 0 0;
+  }
+  
+  &__contorls-navigaion {
+    position: relative;
+  }
+  
+  &__button {
+    background-color: transparent;
+    border: none;
+    margin: 0 34px 0 0;
+  }
+  
+  &__navigation {
+    display: none;
+    background-color: $white;
+    height: 727px;
+    width: 232px;
+    position: absolute;
+    top: 55px;
+    left: 190px;
+    padding-top: 37px;
+    padding-left: 34px;
+  }
+  
+  &__button:hover + &__navigation {
+    display: block;
+  }
+  
+  &__navigation:hover {
+    display: block;
+  }
+  
+  &__menu-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  
+  &__menu-choice {
+    color: $dark-pink;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+  &__menu-list {
+    margin-top: 12px;
+    margin-bottom: 11px;
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  
+  &__person-link {
+    margin: 0 34px 0 0;
+  }
+}
+
+/* элемент у тележки */
+
+.cart {
+  position: relative;
+}
+
+.cart:before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: $dark-pink;
+  position: absolute;
+  right: -7px;
+  top: -23px;
+}
+
+.cart:after {
+  content: "5";
+  color: $white;
+  position: absolute;
+  right: -2px;
+  top: -23px;
+}
+
+@media (max-width: $max-tablet-width) {
+  .header {
+    &__logo {
+      margin: 0 41px 0 32px;
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .header {
+    &__logo {
+      margin: 0;
+    }
+    &__person-link {
+      display: none;
+    }
+
+    .cart {
+      display: none;
+    }
+  }
+}
