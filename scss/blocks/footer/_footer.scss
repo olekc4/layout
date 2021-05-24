@@ -11,3 +11,45 @@
 .rights {
   color: $white;
 }
+
+.facebook {
+  background-color: transparent;
+  border: none;
+}
+
+.facebook__link {
+  fill: $white;
+}
+
+.facebook__color {
+  fill: $dark-blue;
+}
+
+.facebook__link:hover {
+  fill: $dark-pink;
+}
+
+.facebook__link:hover + .facebook__color {
+  fill: $white;
+}
+
+@media (max-width: $max-tablet-width) {
+  .social_nets {
+    margin-right: 16px;
+  }
+
+  .rights {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .footer__bottom {
+    min-height: 143px;
+  }
+
+  .footer__bottom-info {
+    flex-direction: column-reverse;
+    padding-top: 43px;
+  }
+}

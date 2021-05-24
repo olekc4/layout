@@ -34,7 +34,7 @@
 }
 
 .form__input-area {
-  width: 360px;
+  width: 337px;
   height: 45px;
   padding-left: 17px;
 }
@@ -132,4 +132,45 @@
   width: 20px;
   height: 16px;
   left: -43px;
+}
+
+@media (max-width: $max-tablet-width) {
+  .registration__form {
+    margin-top: 40px;
+  }
+
+  .registration__info {
+    width: 354px;
+  }
+
+  .registration__info-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-bottom: 32px;
+  }
+
+  .registration__info-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    padding-bottom: 22px;
+  }
+
+  .registration__mark {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-top: 22px
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .registration__form {
+    flex-direction: column;
+  }
+
+  .registration__info-title {
+    margin-top: 40px;
+  }
 }
