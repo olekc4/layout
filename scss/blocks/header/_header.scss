@@ -32,6 +32,7 @@
     left: 190px;
     padding-top: 37px;
     padding-left: 34px;
+    box-shadow: -5px 5px 8px 0px rgba(34, 60, 80, 0.2);
   }
   
   &__button:hover + &__navigation {
@@ -98,9 +99,30 @@
 
 @media (max-width: $max-tablet-width) {
   .header {
+
     &__logo {
       margin: 0 41px 0 32px;
     }
+
+    &__navigation {
+      left: 0;
+      width: 189px;
+      height: 127px;
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    &__menu-title {
+      margin-bottom: 12px;
+    }
+
+    &__menu-list {
+      display: none;
+    }
+  }
+
+  .cart {
+    margin-right: 25px;
   }
 }
 
@@ -109,6 +131,7 @@
     &__logo {
       margin: 0 41px 0 0;
     }
+
     &__person-link {
       display: none;
     }
@@ -120,6 +143,13 @@
 
     &__button {
       margin: 0;
+    }
+
+    &__navigation {
+      left: 0;
+      top: 51px;
+      width: 150%;
+      height: 100px;
     }
 
     .cart {

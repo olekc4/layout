@@ -87,6 +87,8 @@ a {
   left: 190px;
   padding-top: 37px;
   padding-left: 34px;
+  -webkit-box-shadow: -5px 5px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: -5px 5px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .header__button:hover + .header__navigation {
@@ -153,6 +155,22 @@ a {
   .header__logo {
     margin: 0 41px 0 32px;
   }
+  .header__navigation {
+    left: 0;
+    width: 189px;
+    height: 127px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .header__menu-title {
+    margin-bottom: 12px;
+  }
+  .header__menu-list {
+    display: none;
+  }
+  .cart {
+    margin-right: 25px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -168,6 +186,12 @@ a {
   }
   .header__button {
     margin: 0;
+  }
+  .header__navigation {
+    left: 0;
+    top: 51px;
+    width: 150%;
+    height: 100px;
   }
   .header .cart {
     display: none;
@@ -285,7 +309,7 @@ a {
 @media (max-width: 1599px) {
   .subscrime {
     background-image: url(../img/photo_subscribe_tablet.jpg);
-    width: 768px;
+    max-width: 768px;
     height: 614px;
   }
   .subscrime__wrapper {
@@ -322,6 +346,49 @@ a {
 
 .rights {
   color: #fbfbfb;
+}
+
+.facebook {
+  background-color: transparent;
+  border: none;
+}
+
+.facebook__link {
+  fill: #fbfbfb;
+}
+
+.facebook__color {
+  fill: #222224;
+}
+
+.facebook__link:hover {
+  fill: #f16d7f;
+}
+
+.facebook__link:hover + .facebook__color {
+  fill: #fbfbfb;
+}
+
+@media (max-width: 1599px) {
+  .social_nets {
+    margin-right: 16px;
+  }
+  .rights {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__bottom {
+    min-height: 143px;
+  }
+  .footer__bottom-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 43px;
+  }
 }
 
 .brand {
@@ -411,16 +478,19 @@ a {
   }
   .brand__wrapper {
     height: 363px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .brand__title-wrapper {
-    padding: 0 0 0 83px;
+    padding: 0;
   }
   .brand__title {
     font-size: 38px;
     line-height: 46px;
   }
   .brand__title:before {
-    height: 61px;
+    height: 70px;
     left: -27px;
     top: 5px;
   }
@@ -502,32 +572,41 @@ a {
     background-size: 232px 168px;
   }
   .offers .offers__item-accesories {
-    background-size: 735px 116px;
     width: 100%;
   }
 }
 
-/*
-@media (max-width: $max-mobile-width) {
-  .offers {
-    &__item {
-      width: 343px;
-      min-height: 247px;
-      margin: 0 0 32px;
-    }
-
-    &__list {
-      display: block;
-      justify-content: center;
-      margin-left: 16px;
-    }
-
-    &__item-accesories {
-      height: 111px;
-    }
+@media (max-width: 767px) {
+  .offers__item {
+    width: 343px;
+    min-height: 247px;
+    margin: 0 0 32px;
+  }
+  .offers .offers__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offers .offers__item {
+    width: 343px;
+    height: 247px;
+    margin-bottom: 32px;
+  }
+  .offers .offers__item-woman {
+    background-size: 343px 247px;
+  }
+  .offers .offers__item-man {
+    background-size: 343px 247px;
+  }
+  .offers .offers__item-kids {
+    background-size: 343px 247px;
+  }
+  .offers .offers__item-accesories {
+    height: 111px;
+    background-size: auto;
   }
 }
-*/
+
 .products {
   padding: 96px 0 96px 0;
   display: -webkit-box;
@@ -687,6 +766,15 @@ a {
   color: #ffffff;
 }
 
+@media (max-width: 1599px) {
+  .products {
+    padding: 136px 0 65px 0;
+  }
+  .products__list {
+    padding: 72px 0 2px 0;
+  }
+}
+
 .bottom {
   min-height: 341px;
   background: #222224;
@@ -812,7 +900,7 @@ a {
 }
 
 .form__input-area {
-  width: 360px;
+  width: 337px;
   height: 45px;
   padding-left: 17px;
 }
@@ -910,6 +998,45 @@ a {
   width: 20px;
   height: 16px;
   left: -43px;
+}
+
+@media (max-width: 1599px) {
+  .registration__form {
+    margin-top: 40px;
+  }
+  .registration__info {
+    width: 354px;
+  }
+  .registration__info-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-bottom: 32px;
+  }
+  .registration__info-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    padding-bottom: 22px;
+  }
+  .registration__mark {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .registration__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration__info-title {
+    margin-top: 40px;
+  }
 }
 
 .registration__form-radio {

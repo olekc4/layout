@@ -86,7 +86,7 @@
 @media (max-width: $max-tablet-width) {
   .subscrime {
     background-image: url(../img/photo_subscribe_tablet.jpg);
-    width: 768px;
+    max-width: 768px;
     height: 614px;
 
     &__wrapper {

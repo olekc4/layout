@@ -85,10 +85,11 @@
 
     &__wrapper {
       height: 363px;
+      justify-content: center;
     }
 
     &__title-wrapper {
-      padding: 0 0 0 83px;
+      padding: 0;
     }
 
     &__title {
@@ -97,7 +98,7 @@
     }
 
     &__title:before {
-      height: 61px;
+      height: 70px;
       left: -27px;
       top: 5px;
     }

@@ -66,12 +66,11 @@
     }
 
     .offers__item-accesories {
-      background-size: 735px 116px;
       width: 100%;
     }
   }
 }
-/*
+
 @media (max-width: $max-mobile-width) {
   .offers {
     &__item {
@@ -80,15 +79,31 @@
       margin: 0 0 32px;
     }
 
-    &__list {
-      display: block;
+    .offers__list {
       justify-content: center;
-      margin-left: 16px;
     }
 
-    &__item-accesories {
+    .offers__item {
+      width: 343px;
+      height: 247px;
+      margin-bottom: 32px;
+    }
+
+    .offers__item-woman {
+      background-size: 343px 247px;
+    }
+  
+    .offers__item-man {
+      background-size: 343px 247px;
+    }
+  
+    .offers__item-kids {
+      background-size: 343px 247px;
+    }
+
+    .offers__item-accesories {
       height: 111px;
+      background-size: auto;
     }
   }
 }
-*/
