@@ -1,0 +1,11 @@
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.catalog__item {
+  min-height: 581px;
+  background-color: $light-white;
+}

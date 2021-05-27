@@ -1,0 +1,44 @@
+.catalog__heading {
+  min-height: 148px;
+  background: #f8f3f4;
+  color: $white;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  .catalog__heading-title {
+  color: $dark-pink;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+}
+
+.catalog {
+  padding-top: 51px;
+  padding-bottom: 188px;
+}
+
+.catalog__form-wrapper {
+  padding-bottom: 64px;
+}
+
+.filter {
+  position: relative;
+}
+
+.filter__nav {
+  display: none;
+  
+}
+
+.button-filter {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-transform: uppercase;
+
+}
